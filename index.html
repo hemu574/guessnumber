@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>guess the number</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+       <h3>I am thinking of a number between 1-100.</h3>
+       <h2 style="color: rgb(214, 12, 137);">Can you guess it?</h2>
+       <h3>YOU HAVE ONLY 7 ATTEMPTS</h3>
+
+       <input type="number" placeholder="Num" id="guess"><br>
+       <button onclick="play()" id="my_btn">GUESS</button>
+       <button id="playAgainBtn" onclick="resetGame()" disabled>Play Again</button>
+
+       <p id="msg1">No. Of Guesses: 0</p>
+       <p id="msg2">Guessed Numbers are: None</p>
+       <p id="msg3"></p>
+   </div>
+   <!--Script-->
+   <script src="script.js"></script>
+  <footer>
+    <p>&copy; done by-vaish</p>
+  </footer>
+
+</body>
+</html>
